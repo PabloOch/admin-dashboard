@@ -6,8 +6,12 @@ import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import Souvik from '../data/souvik.png';
-import { Cart, Chat, Notification, UserProfile } from '.';
+import Pablo from '../data/pablo.jpg';
+// import { Cart, Chat, Notification, UserProfile } from '.';
+import Cart from './Cart';
+import Chat from './Chat';
+import Notification from './Notification';
+import UserProfile from './UserProfile';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
@@ -65,13 +69,13 @@ const Navbar = () => {
           >
             <img
               className="rounded-full w-8 h-8"
-              src={Souvik}
+              src={Pablo}
               alt="user-profile"
             />
             <p>
               <span className="text-gray-400 text-14">Hi,</span>{' '}
               <span className="text-gray-400 font-bold ml-1 text-14">
-                Souvik
+                Pablo
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
